@@ -8,7 +8,7 @@
 import requests
 import unittest
 from Log.GetLog import GetLog
-
+import json
 
 class ApiTest(unittest.TestCase):
 
@@ -16,5 +16,5 @@ class ApiTest(unittest.TestCase):
         log = GetLog.get_log()
 
     def api_test(method, url, params):
-        response = requests.request(method, url, data=params)
+        response = requests.request(method, url, json=json.dumps(params))
         print(response.json())
