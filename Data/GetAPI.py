@@ -5,36 +5,63 @@
 # @Desc  :
 
 
-import xlrd
-import os
-import logging
-import unittest
+from Data.Config import Config
 
 
 class GetAPI():
 
-    def __init__(self):
-        # 设置API_Data路径
-        API_Excel = os.path.join(".\API_Data.xlsx")
+    def collect_data(self, model=None, api_func=None):
+        all_api_data = Config.get_api_data(self)
+        api_data = []
+        for i in range(len(all_api_data)):
+            if all_api_data[i][1] == model and all_api_data[i][2] == api_func:
+                api_data = all_api_data[i]
+                return api_data
+            else:
+                return all_api_data
 
-        # 打印sheet的名字
-        self.workbook = xlrd.open_workbook(API_Excel)
+    def get_host(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        host = all_api_data[0]
+        return host
 
-    def getData(self):
-        # 根据sheet名称获取sheet内容,sheet行数,sheet列数
-        API_sheet = self.workbook.sheet_by_name("API_Data")
-        print(API_sheet.name)
-        rowNum = API_sheet.nrows
-        colNum = API_sheet.ncols
+    def get_model(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        model = all_api_data[1]
+        return model
 
-        rows = API_sheet.row_values(0)
-        print(rows)
+    def get_api_func(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        api_func = all_api_data[2]
+        return api_func
 
-        collist = []
-        for i in range(colNum):
-            cols = API_sheet.col_values()
-            collist.append(cols)
-        print(collist)
+    def get_path(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        path = all_api_data[3]
+        print(path)
+        return path
+
+    def get_method(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        method = all_api_data[4]
+        return method
+
+    def get_data_type(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        data_type = all_api_data[5]
+        return data_type
+
+    def get_required_params(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        required_params = all_api_data[6]
+        print(required_params)
+        return required_params
+
+    def get_selective_params(self, model=None, api_func=None):
+        all_api_data = GetAPI.collect_data(self, model, api_func)
+        selective_params = all_api_data[7]
+        return selective_params
+
 
 test = GetAPI()
-test.getData()
+test.get_required_params("Login","Login")

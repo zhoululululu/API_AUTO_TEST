@@ -2,17 +2,17 @@
 # @File  : RunMethod.py
 # @Author: 周璐
 # @Date  : 2019/5/29
-# @Desc  :
+# @Desc  : 封装发送接口函数
 
 import requests
 import json
 
 
 class RunMethod:
-    def post_main(self, url, data, data_type,header=None):
+    def post_main(self, url, data, data_type, header=None):
         response = None
         if header != None:
-            if data_type =="params":
+            if data_type == "params":
                 response = requests.post(url=url, params=data, headers=header)
             elif data_type == "data":
                 response = requests.post(url=url, data=data, headers=header)
@@ -31,7 +31,7 @@ class RunMethod:
                 response = requests.post(url=url, file=data)
         return response.json()
 
-    def get_main(self, url, data, data_type,header=None):
+    def get_main(self, url, data, data_type, header=None):
         response = None
         if header != None:
             if data_type == "params":
