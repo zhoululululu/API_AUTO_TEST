@@ -7,7 +7,6 @@
 
 from Data.Config import Config
 
-
 class GetAPI():
 
     def collect_data(self, model=None, api_func=None):
@@ -16,9 +15,7 @@ class GetAPI():
         for i in range(len(all_api_data)):
             if all_api_data[i][1] == model and all_api_data[i][2] == api_func:
                 api_data = all_api_data[i]
-                return api_data
-            else:
-                return all_api_data
+        return api_data
 
     def get_host(self, model=None, api_func=None):
         all_api_data = GetAPI.collect_data(self, model, api_func)
@@ -54,14 +51,9 @@ class GetAPI():
     def get_required_params(self, model=None, api_func=None):
         all_api_data = GetAPI.collect_data(self, model, api_func)
         required_params = all_api_data[6]
-        print(required_params)
         return required_params
 
     def get_selective_params(self, model=None, api_func=None):
         all_api_data = GetAPI.collect_data(self, model, api_func)
         selective_params = all_api_data[7]
         return selective_params
-
-
-test = GetAPI()
-test.get_required_params("Login","Login")

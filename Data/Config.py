@@ -6,6 +6,7 @@
 
 import os
 import xlrd
+import string
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -26,13 +27,13 @@ class Config:
 
     # 提取API文件内容
     def get_api_data(self):
-        self.workbook = xlrd.open_workbook(rootPath + "\\Data\\API_Data.xlsx")
+        apibook = xlrd.open_workbook(rootPath + "\\Data\\API_Data.xlsx")
 
         # 提取API参数内容等
-        API_sheet = self.workbook.sheet_by_name("API_Data")
+        API_sheet = apibook.sheet_by_name("API_Data")
         data_row = []
         for i in range(1, API_sheet.nrows):
             rows = API_sheet.row_values(i)
             data_row.append(rows)
-        print(data_row)
+        #print(data_row)
         return data_row

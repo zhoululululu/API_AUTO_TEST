@@ -5,20 +5,28 @@
 # @Desc  :
 
 
-from Data.Config import Config
 from Data.GetAPI import GetAPI
 
 
 class GetParams:
-    def translation_params(self, fileName):
-        required_params = GetAPI.get_required_params("Login","Login")
-        selective_params = GetAPI.get_selective_params("Login","Login")
-        print(required_params,selective_params)
+    def translation_params(self, model, api_func):
+        params = ""
+        required_params = GetAPI.get_required_params(self, model, api_func)
+        selective_params = GetAPI.get_selective_params(self, model, api_func)
+        if required_params == "-" and selective_params == "-":
+            return params
+        elif required_params != "-" and selective_params == "-":
+            return params
+
+        print(required_params, selective_params)
         # all_case_data = Config.get_case_params(self, fileName)
         # for i in range (len(all_case_data)):
         #     params = all_case_data[i][1]
         #     print(params)
         # print(all_case_data)
 
+
 test = GetParams()
-test.translation_params("Login")
+test.translation_params("Login", "Login")
+# test.translation_params("Logout","Logout")
+# test.translation_params("-","-")
