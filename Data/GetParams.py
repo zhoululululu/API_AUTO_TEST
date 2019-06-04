@@ -31,15 +31,12 @@ class GetParams:
             print(pa)
             # print(d_pa)
             for i in range(len(pa)):
-                param[pa[i]]=""
+                param[pa[i]] = ""
                 for j in range(len(params_data)):
-                    print(j)
-                    param[pa[i]] = params_data[j]
-
+                    print((params_data[j].split(",")))
+                    param[pa[i]] = params_data[j].split(",")[i]
                     data_param.append(param)
-                print(data_param)
-
-            print(trans_params)
+            print(data_param)
             return trans_params
 
         print(required_params, selective_params)
