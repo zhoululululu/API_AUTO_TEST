@@ -15,14 +15,24 @@ rootPath = os.path.split(curPath)[0]
 class Config:
 
     # 提取Case文件内容
+    # def get_case_params(self, filename):
+    #     file = open(rootPath + "\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
+    #     f = file.readlines()
+    #     data_row = []
+    #     # 提取测试描述及参数
+    #     for i in range(len(f)):
+    #         data = f[i].split("|")
+    #         data_row.append(data)
+    #     return data_row
+
+    # 提取Case文件内容
     def get_case_params(self, filename):
         file = open(rootPath + "\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
-        f = file.readlines()
         data_row = []
         # 提取测试描述及参数
-        for i in range(len(f)):
-            data = f[i].split("|")
-            data_row.append(data)
+        for line in file.readlines():
+            line = line.strip("\n")
+            data_row.append(line.split("|")[1])
         return data_row
 
     # 提取API文件内容
@@ -35,5 +45,9 @@ class Config:
         for i in range(1, API_sheet.nrows):
             rows = API_sheet.row_values(i)
             data_row.append(rows)
-        #print(data_row)
+        # print(data_row)
         return data_row
+
+#
+# test = Config()
+# test.get_case_params("Login")

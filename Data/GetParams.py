@@ -6,17 +6,41 @@
 
 
 from Data.GetAPI import GetAPI
+from Data.Config import Config
 
 
 class GetParams:
+
     def translation_params(self, model, api_func):
-        params = ""
+        api_param = []
+        data_param = []
+        param = {}
+        trans_params = []
+
         required_params = GetAPI.get_required_params(self, model, api_func)
         selective_params = GetAPI.get_selective_params(self, model, api_func)
+        params_data = Config.get_case_params(self, api_func)
+        print(params_data)
+
         if required_params == "-" and selective_params == "-":
-            return params
+            return trans_params
+
         elif required_params != "-" and selective_params == "-":
-            return params
+            pa = str(required_params).split(",")
+            # d_pa = str(params_data).split(",")
+            print(pa)
+            # print(d_pa)
+            for i in range(len(pa)):
+                param[pa[i]]=""
+                for j in range(len(params_data)):
+                    print(j)
+                    param[pa[i]] = params_data[j]
+
+                    data_param.append(param)
+                print(data_param)
+
+            print(trans_params)
+            return trans_params
 
         print(required_params, selective_params)
         # all_case_data = Config.get_case_params(self, fileName)
@@ -27,6 +51,7 @@ class GetParams:
 
 
 test = GetParams()
+# test.get_params("Login", "Login")
 test.translation_params("Login", "Login")
 # test.translation_params("Logout","Logout")
 # test.translation_params("-","-")
