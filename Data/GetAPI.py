@@ -7,6 +7,7 @@
 
 from Data.Config import Config
 
+
 class GetAPI():
 
     def collect_data(self, model=None, api_func=None):
@@ -35,7 +36,6 @@ class GetAPI():
     def get_path(self, model=None, api_func=None):
         all_api_data = GetAPI.collect_data(self, model, api_func)
         path = all_api_data[3]
-        print(path)
         return path
 
     def get_method(self, model=None, api_func=None):
@@ -57,3 +57,7 @@ class GetAPI():
         all_api_data = GetAPI.collect_data(self, model, api_func)
         selective_params = all_api_data[7]
         return selective_params
+
+
+test = GetAPI()
+test.get_required_params("Logout","Logout")
