@@ -15,7 +15,7 @@ class GetParams:
 
         required_params = GetAPI.get_required_params(self, model, api_func)
         selective_params = GetAPI.get_selective_params(self, model, api_func)
-        params_data = Config.get_case_params(self, model+"_"+api_func)
+        params_data = Config.get_case_params(self, model + "_" + api_func)
 
         trans_params = []  # 定义拼接参数字典
 

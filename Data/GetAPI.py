@@ -58,6 +58,3 @@ class GetAPI():
         selective_params = all_api_data[7]
         return selective_params
 
-
-test = GetAPI()
-test.get_required_params("Logout","Logout")
