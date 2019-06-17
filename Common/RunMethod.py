@@ -9,6 +9,9 @@ import json
 
 
 class RunMethod:
+    def __init__(self):
+        self.session = requests.session()
+
     def post_main(self, url, data=None, data_type=None, header=None):
         response = None
         if header != None:
@@ -33,7 +36,8 @@ class RunMethod:
                 response = requests.post(url=url, file=data, verify=False)
             elif data_type == "-":
                 response = requests.post(url=url)
-        return response.json()
+        #return response.json()
+        return response
 
     def get_main(self, url, data=None, data_type=None, header=None):
         response = None
@@ -55,7 +59,8 @@ class RunMethod:
                 response = requests.get(url=url, json=data, verify=False)
             elif data_type == "-":
                 response = requests.get(url=url)
-        return response.json()
+        #return response.json()
+        return response
 
     def put_main(self, url, data=None, data_type=None, header=None):
         response = None
@@ -77,7 +82,8 @@ class RunMethod:
                 response = requests.put(url=url, json=data, verify=False)
             elif data_type == "-":
                 response = requests.put(url=url)
-        return response.json()
+        #return response.json()
+        return response
 
     def delete_main(self, url, data=None, data_type=None, header=None):
         response = None
@@ -99,7 +105,8 @@ class RunMethod:
                 response = requests.delete(url=url, json=data, verify=False)
             elif data_type == "-":
                 response = requests.delete(url=url)
-        return response.json()
+        #return response.json()
+        return response
 
     def patch_main(self, url, data=None, data_type=None, header=None):
         response = None
@@ -121,7 +128,8 @@ class RunMethod:
                 response = requests.patch(url=url, json=data, verify=False)
             elif data_type == "-":
                 response = requests.patch(url=url)
-        return response.json()
+        #return response.json()
+        return response
 
     def head_main(self, url, data=None, data_type=None, header=None):
         response = None
@@ -143,7 +151,8 @@ class RunMethod:
                 response = requests.head(url=url, json=data, verify=False)
             elif data_type == "-":
                 response = requests.head(url=url)
-        return response.json()
+        #return response.json()
+        return response
 
     def run_main(self, url, method, data=None, data_type=None, header=None):
         response = None
@@ -161,4 +170,5 @@ class RunMethod:
             response = self.delete_main(url, data, data_type, header)
         else:
             response = self.head_main(url, data, data_type, header)
-        return json.dumps(response, ensure_ascii=False)
+        # return json.dumps(response, ensure_ascii=False)
+        return response

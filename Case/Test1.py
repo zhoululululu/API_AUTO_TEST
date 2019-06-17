@@ -10,12 +10,21 @@ from Data.GetAPI import GetAPI
 from Data.GetParams import GetParams
 from Data.Config import Config
 import os
+import sys
+import time
+import unittest
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+
+sys.path.append(rootPath)
+from HTMLTestRunner import HTMLTestRunner
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 
 
-class Test1:
+class Test1(unittest.TestCase):
 
     def test(self):
         case_name = Config.get_case_name(self, "Case")
@@ -36,5 +45,7 @@ class Test1:
                 print("-----------", res)
 
 
-test = Test1()
-test.test()
+if __name__ == '__main__':
+    suit = unittest.TestSuite
+    runner = unittest.TextTestRunner
+    runner.run(suit)

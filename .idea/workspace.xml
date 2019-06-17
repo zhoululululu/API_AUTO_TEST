@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd17e409-e5ee-4934-ad79-1b16290234cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Data/GetCookie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/RunMethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/RunMethod.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/API_Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/API_Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/GetAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/GetAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/GetParams.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/GetParams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Case/Test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/GetCookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/GetCookie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Run/AllRun.py" beforeDir="false" afterPath="$PROJECT_DIR$/Run/AllRun.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +17,30 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$GetParams.coverage" NAME="GetParams Coverage Results" MODIFIED="1560411474917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$GetAPI.coverage" NAME="GetAPI Coverage Results" MODIFIED="1560492848282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_for_AllRun_AllRun.coverage" NAME="Unittests for AllRun.AllRun Coverage Results" MODIFIED="1560766219922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Run" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_for_API_test_ApiTest.coverage" NAME="Unittests for API_test.ApiTest Coverage Results" MODIFIED="1559129171361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
-    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1560492377135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_for_Test1_Test1.coverage" NAME="Unittests for Test1.Test1 Coverage Results" MODIFIED="1560766132880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_in_Test1_py.coverage" NAME="Unittests in Test1.py Coverage Results" MODIFIED="1560766178778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1560750329586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$Config.coverage" NAME="Config Coverage Results" MODIFIED="1559645393305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data" />
-    <SUITE FILE_PATH="coverage/API_AUTO_TEST$GetCookie.coverage" NAME="GetCookie Coverage Results" MODIFIED="1560497054279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$RunMethod.coverage" NAME="RunMethod Coverage Results" MODIFIED="1560761924661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_for_Test1_Test1_test.coverage" NAME="Unittests for Test1.Test1.test Coverage Results" MODIFIED="1560766401575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_in_AllRun_py.coverage" NAME="Unittests in AllRun.py Coverage Results" MODIFIED="1560766280191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Run" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$GetCookie.coverage" NAME="GetCookie Coverage Results" MODIFIED="1560763111266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -47,19 +66,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/GetAPI.py">
+        <entry file="file://$PROJECT_DIR$/Common/RunMethod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="399">
+              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+              <folding>
+                <element signature="e#104#119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/GetCookie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="273">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding>
                 <element signature="e#96#126#0" expanded="true" />
               </folding>
@@ -70,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="689">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#92#101#0" expanded="true" />
@@ -80,34 +102,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/Test1.py">
+        <entry file="file://$PROJECT_DIR$/Run/AllRun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="73" />
+            <state>
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#93#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Case/Test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="e#92#130#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/RunMethod.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="157" column="31" lean-forward="true" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
-              <folding>
-                <element signature="e#104#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python3.7/Lib/site-packages/requests/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1315">
-              <caret line="90" column="8" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -128,26 +141,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Log/GetLog.py" />
-        <option value="$PROJECT_DIR$/Run/AllRun.py" />
         <option value="$PROJECT_DIR$/Common/Test.py" />
         <option value="$PROJECT_DIR$/Case/LoginCase" />
         <option value="$PROJECT_DIR$/Data/ParamsData" />
         <option value="$PROJECT_DIR$/Common/API_test.py" />
         <option value="$PROJECT_DIR$/Case/Login.txt" />
         <option value="$PROJECT_DIR$/Data/Config.py" />
-        <option value="$PROJECT_DIR$/Common/Test1.py" />
         <option value="$PROJECT_DIR$/Case/GetLoginForLogin.txt" />
         <option value="$PROJECT_DIR$/Data/GetParams.py" />
         <option value="$PROJECT_DIR$/Data/GetAPI.py" />
         <option value="$PROJECT_DIR$/Common/RunMethod.py" />
         <option value="$PROJECT_DIR$/Data/GetCookie.py" />
+        <option value="$PROJECT_DIR$/Common/Test1.py" />
+        <option value="$PROJECT_DIR$/Run/AllRun.py" />
+        <option value="$PROJECT_DIR$/Case/Test1.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="125" />
+    <option name="y" value="253" />
+    <option name="width" value="1346" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -204,6 +219,9 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pycharm_workspace\API_AUTO_TEST\Case" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\pycharm_workspace\API_AUTO_TEST\Data" />
     </key>
@@ -220,124 +238,77 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GetCookie">
-    <configuration name="Config" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="API_AUTO_TEST" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/Config.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+  <component name="RunManager" selected="Python tests.Unittests for Test1.Test1.test">
+    <configuration name="19_06_17-18_11_20result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/API_AUTO_TEST/Report/19_06_17-18_11_20result.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="GetAPI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for AllRun.AllRun" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="API_AUTO_TEST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Run" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/GetAPI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;AllRun.AllRun&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="GetCookie" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for Test1.Test1.test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="API_AUTO_TEST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/GetCookie.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test1.Test1.test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="GetParams" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in AllRun.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="API_AUTO_TEST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Run" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/GetParams.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Run/AllRun.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in Test1.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="API_AUTO_TEST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Common/Test1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Case/Test1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.GetCookie" />
-        <item itemvalue="Python.GetAPI" />
-        <item itemvalue="Python.Test1" />
-        <item itemvalue="Python.GetParams" />
-        <item itemvalue="Python.Config" />
+        <item itemvalue="Python tests.Unittests for Test1.Test1.test" />
+        <item itemvalue="JavaScript Debug.19_06_17-18_11_20result.html" />
+        <item itemvalue="Python tests.Unittests in AllRun.py" />
+        <item itemvalue="Python tests.Unittests for AllRun.AllRun" />
+        <item itemvalue="Python tests.Unittests in Test1.py" />
       </list>
     </recent_temporary>
   </component>
@@ -361,6 +332,7 @@
       <workItem from="1560303626242" duration="7195000" />
       <workItem from="1560408360847" duration="13576000" />
       <workItem from="1560474278890" duration="6880000" />
+      <workItem from="1560735425103" duration="8028000" />
     </task>
     <servers />
   </component>
@@ -374,20 +346,41 @@
     <history-entry file="Unittests_for_API_test_ApiTest - 2019.05.29 at 19h 26m 11s.xml">
       <configuration name="Unittests for API_test.ApiTest" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_AllRun_AllRun - 2019.06.17 at 18h 06m 05s.xml">
+      <configuration name="Unittests for AllRun.AllRun" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test1_Test1 - 2019.06.17 at 18h 08m 53s.xml">
+      <configuration name="Unittests for Test1.Test1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Test1_py - 2019.06.17 at 18h 09m 41s.xml">
+      <configuration name="Unittests in Test1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_AllRun_AllRun - 2019.06.17 at 18h 10m 20s.xml">
+      <configuration name="Unittests for AllRun.AllRun" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_AllRun_py - 2019.06.17 at 18h 10m 55s.xml">
+      <configuration name="Unittests in AllRun.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_AllRun_py - 2019.06.17 at 18h 11m 21s.xml">
+      <configuration name="Unittests in AllRun.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test1_Test1_test - 2019.06.17 at 18h 13m 23s.xml">
+      <configuration name="Unittests for Test1.Test1.test" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111856000" />
+    <option name="totallyTimeSpent" value="119884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19364598" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19667171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2569558" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3715221" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40261865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3764321" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,8 +394,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18778281" />
@@ -491,16 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Run/AllRun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="e#93#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python3.7/Lib/encodings/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -546,10 +529,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Case/Login_LoginForCookie).txt">
+    <entry file="file://$PROJECT_DIR$/Case/Login_LoginForCookie).txt" />
+    <entry file="file://D:/Python3.7/Lib/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6635">
+          <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python3.7/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/GetAPI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/Login_Login.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -563,50 +568,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/GetAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/Login_Login.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/RunMethod.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="157" column="31" lean-forward="true" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
+        <state relative-caret-position="399">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
           <folding>
             <element signature="e#104#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python3.7/Lib/site-packages/requests/api.py">
+    <entry file="file://$PROJECT_DIR$/Data/GetCookie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1315">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="8" />
+        <state relative-caret-position="273">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="e#96#126#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Test1.py">
+    <entry file="file://$PROJECT_DIR$/Report/19_06_17-18_11_20result.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Run/AllRun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="73" />
+        <state>
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#92#130#0" expanded="true" />
+            <element signature="e#93#102#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/Config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="689">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#92#101#0" expanded="true" />
@@ -614,19 +611,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python3.7/Lib/site-packages/requests/sessions.py">
+    <entry file="file://$PROJECT_DIR$/Case/Test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6635">
-          <caret line="374" lean-forward="true" selection-start-line="374" selection-end-line="374" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/GetCookie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="189">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
-            <element signature="e#96#126#0" expanded="true" />
+            <element signature="e#92#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
