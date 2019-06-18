@@ -42,7 +42,7 @@ class Test2(unittest.TestCase):
 
         return res
 
-    def test_f11(self):
+    def f11(self):
         '''验证是否登录成功'''
         case_name = Config.get_case_name(".\Case")
         for i in range(len(case_name)):
@@ -57,21 +57,19 @@ class Test2(unittest.TestCase):
             if len(param) != 0:
                 for i in range(len(param)):
                     res = Test2.f1(self, url, method, eval(param[i]), data_type, expected_results[i])
+                    return self.assertTrue(res.json().get("code") == expected_results[i])
                     print("-----------", res.json(), res.json().get("code"))
 
             else:
                 res = Test2.f2(self, url, method, param, data_type, expected_results[0])
+                return self.assertTrue(res.json().get("code") == expected_results[0])
                 print("-----------", res.json(), res.json().get("code"))
 
 
-test = Test2()
-test.test_f11()
-
-def Add_case(self):
+def Add_case():
     test_dir = rootPath + '\Common'
     suit = unittest.TestSuite()
-    discover = unittest.defaultTestLoader.discover(test_dir, pattern='Test*.py', top_level_dir=None)
-    print(discover)
+    discover = unittest.defaultTestLoader.discover(test_dir, pattern='test2.py', top_level_dir=None)
     for test_suit in discover:
         for case in test_suit:
             suit.addTest(case)
@@ -85,7 +83,6 @@ fp = open(filename, 'wb')
 runner = HTMLTestRunner(stream=fp, title='测试报告', description='测试执行情况')
 runner.run(alllcase)
 
-Add_case()
 if __name__ == '__main__':
     suit = unittest.TestSuite
     runner = unittest.TextTestRunner
