@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File  : GetParams.py
+# @File  : GetData.py
 # @Author: 周璐
 # @Date  : 2019/5/31
 # @Desc  :
@@ -9,7 +9,7 @@ from Data.GetAPI import GetAPI
 from Data.Config import Config
 
 
-class GetParams:
+class GetData:
 
     def translation_params(self, model, api_func):
 

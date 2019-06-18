@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-17 18:11:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.826048</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-18 17:42:33</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>测试执行情况</p>
@@ -222,7 +222,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>Test1.Test1</td>
+    <td>unittest.loader._FailedTest</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
@@ -231,7 +231,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test</div></td>
+    <td class='errorCase'><div class='testcase'>Test1</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -245,14 +245,26 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "D:\pycharm_workspace\API_AUTO_TEST\Case\Test1.py", line 33, in test
-    api_func = case_name[i][1]
-IndexError: list index out of range
+ft1.1: ImportError: Failed to import test module: Test1
 Traceback (most recent call last):
-  File "D:\pycharm_workspace\API_AUTO_TEST\Case\Test1.py", line 33, in test
-    api_func = case_name[i][1]
-IndexError: list index out of range
+  File "D:\Python3.7\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\Python3.7\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\pycharm_workspace\API_AUTO_TEST\Common\Test1.py", line 61, in &lt;module&gt;
+    test.f11()
+AttributeError: 'Test1' object has no attribute 'f11'
+
+ImportError: Failed to import test module: Test1
+Traceback (most recent call last):
+  File "D:\Python3.7\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\Python3.7\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\pycharm_workspace\API_AUTO_TEST\Common\Test1.py", line 61, in &lt;module&gt;
+    test.f11()
+AttributeError: 'Test1' object has no attribute 'f11'
+
 
 
         </pre>

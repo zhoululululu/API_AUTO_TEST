@@ -20,7 +20,7 @@ from HTMLTestRunner import HTMLTestRunner
 class AllRun(unittest.TestCase):
 
     def Add_case(self):
-        test_dir = rootPath + '\Case'
+        test_dir = rootPath + '\Common'
         suit = unittest.TestSuite()
         discover = unittest.defaultTestLoader.discover(test_dir, pattern='Test*.py', top_level_dir=None)
         print(discover)
@@ -29,7 +29,8 @@ class AllRun(unittest.TestCase):
                 suit.addTest(case)
         return suit
 
-test =AllRun()
+
+test = AllRun()
 alllcase = test.Add_case()
 now = time.strftime('%y_%m_%d-%H_%M_%S')
 filename = rootPath + '\Report' + '\\' + now + 'result.html'

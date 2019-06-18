@@ -6,7 +6,7 @@
 
 
 from Data.GetAPI import GetAPI
-from Data.GetParams import GetParams
+from Data.GetData import GetData
 import requests
 from Common.RunMethod import RunMethod
 
@@ -16,7 +16,7 @@ class GetCookie:
         self.session = requests.session()
 
     def get_cookie(self):
-        param = GetParams.translation_params(self, "Login", "Login")
+        param = GetData.translation_params(self, "Login", "Login")
         method = GetAPI().get_method("Login", "Login")
         url = GetAPI().get_host("Login", "Login") + GetAPI().get_path("Login", "Login")
         data_type = GetAPI().get_data_type("Login", "Login")
