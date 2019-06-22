@@ -5,8 +5,8 @@
 # @Desc  :
 
 
-from Data.GetAPI import GetAPI
-from Data.GetData import GetData
+from Common.GetAPI import GetAPI
+from Common.GetData import GetData
 import requests
 from Common.RunMethod import RunMethod
 

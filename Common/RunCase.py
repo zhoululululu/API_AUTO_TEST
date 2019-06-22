@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# @File  : Test1.py
+# @File  : RunCase.py
 # @Author: 周璐
-# @Date  : 2019/5/28
+# @Date  : 2019/6/21
 # @Desc  :
 
 
@@ -11,33 +11,18 @@ from Common.GetData import GetData
 from Common.Config import Config
 import os
 import sys
-import unittest
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 
 
-class Test1(unittest.TestCase):
+class RunCase:
 
-    # @staticmethod
-    def f1(self, url, method, param, data_type, expected_results):
+    def run_case(self, case):
         '''验证是否登录成功'''
-        res = RunMethod().run_main(url, method, param, data_type)
-        self.assertTrue(res.json().get("code") == expected_results)
-        return res
-
-    def f2(self, url, method, param, data_type, expected_results):
-        '''验证是否登录成功'''
-        res = RunMethod().run_main(url, method, param, data_type)
-        self.assertTrue(res.json().get("code") == expected_results)
-
-        return res
-
-
-    def test_f11(self):
-        '''验证是否登录成功'''
-        case_name = Config.get_case_name(".\Case")
+        case_name = Config.get_case_name(".\Data\Case")
+        print(case_name)
         for i in range(len(case_name)):
             api_model = case_name[i][0]
             api_func = case_name[i][1]
@@ -49,18 +34,12 @@ class Test1(unittest.TestCase):
 
             if len(param) != 0:
                 for i in range(len(param)):
-                    res = Test1.f1(self,url, method, eval(param[i]), data_type, expected_results[i])
+                    res = RunMethod().run_main(url, method, eval(param[i]), data_type)
                     print("-----------", res.json(), res.json().get("code"))
+                    return self.assertTrue(res.json().get("code") == expected_results[i])
 
             else:
-                res = Test1.f2(self,url, method, param, data_type, expected_results[0])
+                res = RunMethod().run_main(url, method, param, data_type)
                 print("-----------", res.json(), res.json().get("code"))
+                return self.assertTrue(res.json().get("code") == expected_results[0])
 
-
-test = Test1()
-test.test_f11()
-
-if __name__ == '__main__':
-    suit = unittest.TestSuite
-    runner = unittest.TextTestRunner
-    runner.run(suit)

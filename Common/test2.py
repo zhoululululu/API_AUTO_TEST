@@ -11,9 +11,9 @@
 
 
 from Common.RunMethod import RunMethod
-from Data.GetAPI import GetAPI
-from Data.GetData import GetData
-from Data.Config import Config
+from Common.GetAPI import GetAPI
+from Common.GetData import GetData
+from Common.Config import Config
 import os
 import sys
 import unittest
@@ -42,7 +42,7 @@ class Test2(unittest.TestCase):
 
         return res
 
-    def f11(self):
+    def test_f11(self):
         '''验证是否登录成功'''
         case_name = Config.get_case_name(".\Case")
         for i in range(len(case_name)):
@@ -57,13 +57,13 @@ class Test2(unittest.TestCase):
             if len(param) != 0:
                 for i in range(len(param)):
                     res = Test2.f1(self, url, method, eval(param[i]), data_type, expected_results[i])
-                    return self.assertTrue(res.json().get("code") == expected_results[i])
                     print("-----------", res.json(), res.json().get("code"))
+                    return self.assertTrue(res.json().get("code") == expected_results[i])
 
             else:
                 res = Test2.f2(self, url, method, param, data_type, expected_results[0])
-                return self.assertTrue(res.json().get("code") == expected_results[0])
                 print("-----------", res.json(), res.json().get("code"))
+                return self.assertTrue(res.json().get("code") == expected_results[0])
 
 
 def Add_case():

@@ -15,7 +15,7 @@ class Config:
 
     # 提取Case文件描述内容
     def get_description(self, filename):
-        file = open(rootPath + "\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
+        file = open(rootPath + "\\Data\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
         description_row = []
         # 提取描述内容
         for line in file.readlines():
@@ -26,7 +26,7 @@ class Config:
 
     # 提取Case文件param内容
     def get_case_params(self, filename):
-        file = open(rootPath + "\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
+        file = open(rootPath + "\\Data\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
         data_row = []
         # 提取param内容
         for line in file.readlines():
@@ -37,7 +37,7 @@ class Config:
 
     # 提取Case文件预期结果内容
     def get_expected_results(self, filename):
-        file = open(rootPath + "\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
+        file = open(rootPath + "\\Data\\Case\\" + filename + ".txt", "r", encoding="utf-8-sig")
         expected_results_row = []
         # 提取预期结果内容
         for line in file.readlines():

@@ -5,8 +5,8 @@
 # @Desc  :
 
 
-from Data.GetAPI import GetAPI
-from Data.Config import Config
+from Common.GetAPI import GetAPI
+from Common.Config import Config
 
 
 class GetData:
