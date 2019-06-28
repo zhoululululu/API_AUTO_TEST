@@ -11,7 +11,7 @@ class GetLog:
 
     def __init__(self):
         curTime = time.strftime('%Y-%m-%d')
-        self.logname = 'Reports/Log/' + 'AutoTest' + '_' + curTime + '.log'
+        self.logname = 'Log/' + 'AutoTest' + '_' + curTime + '.log'
 
     def get_log(self,level,msg):
 

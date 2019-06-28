@@ -23,17 +23,17 @@ class Test_Login(unittest.TestCase):
     res = [0, 100, 200, 300]
 
 
-    def main_function(a):
-        if a % 3 == 0:
-            return a
-
-    def test(self):
-        ts = [lambda x=Test_Login.res[i], y=Test_Login.res[i + 1]: [Test_Login.main_function(a) for a in range(x, y) if
-                                                                    Test_Login.main_function(a) != None] for i, v in
-              enumerate(Test_Login.res) if i < len(Test_Login.res) - 1]
-
-        for t in ts:
-            print(t())
+    # def test_main_function(a):
+    #     if a % 3 == 0:
+    #         return a
+    #
+    # def test(self):
+    #     ts = [lambda x=Test_Login.res[i], y=Test_Login.res[i + 1]: [Test_Login.test_main_function(a) for a in range(x, y) if
+    #                                                                 Test_Login.test_main_function(a) != None] for i, v in
+    #           enumerate(Test_Login.res) if i < len(Test_Login.res) - 1]
+    #
+    #     for t in ts:
+    #         print(t())
 
 
 

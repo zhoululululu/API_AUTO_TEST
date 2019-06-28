@@ -3,11 +3,6 @@
 # @Author: 周璐
 # @Date  : 2019/6/18
 # @Desc  :
-# -*- coding: utf-8 -*-
-# @File  : Test1.py
-# @Author: 周璐
-# @Date  : 2019/5/28
-# @Desc  :
 
 
 from Common.RunMethod import RunMethod

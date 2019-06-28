@@ -63,6 +63,7 @@ class Config:
     def get_case_name(case_dir):
         case_name = []
         path = rootPath + "\\" + case_dir
+        print(path)
         for now_dir, sb_dir, files in os.walk(path, topdown=False):
             for name in files:
                 case_name.append((os.path.splitext(name))[0].split("_"))  # 分离文件名及后缀 去除model及func

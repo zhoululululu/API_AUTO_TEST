@@ -15,31 +15,56 @@ import sys
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
+from Common.Logging import Logging
 
 
 class RunCase:
 
     def run_case(self, case):
         '''验证是否登录成功'''
-        case_name = Config.get_case_name(".\Data\Case")
-        print(case_name)
-        for i in range(len(case_name)):
-            api_model = case_name[i][0]
-            api_func = case_name[i][1]
-            param = GetData.translation_params(self, api_model, api_func)
-            method = GetAPI().get_method(api_model, api_func)
-            url = GetAPI().get_host(api_model, api_func) + GetAPI().get_path(api_model, api_func)
-            data_type = GetAPI().get_data_type(api_model, api_func)
-            expected_results = Config.get_expected_results(self, api_model + "_" + api_func)
+        # case_name = Config.get_case_name("\\Data\Case\\" + case+".txt")
+        # print(case_name)
+        # for i in range(len(case_name)):
+        #     api_model = case_name[i][0]
+        #     api_func = case_name[i][1]
+        #     description = Config.get_description(self, api_model + "_" + api_func)
+        #     param = GetData.translation_params(self, api_model, api_func)
+        #     method = GetAPI().get_method(api_model, api_func)
+        #     url = GetAPI().get_host(api_model, api_func) + GetAPI().get_path(api_model, api_func)
+        #     data_type = GetAPI().get_data_type(api_model, api_func)
+        #     expected_results = Config.get_expected_results(self, api_model + "_" + api_func)
+        #
+        #     if len(param) != 0:
+        #         for i in range(len(param)):
+        #             res = RunMethod().run_main(url, method, eval(param[i]), data_type)
+        #             print(description, res.json())
+        #             self.assertTrue(description, res.json().get("code") == expected_results[i])
+        #
+        #     else:
+        #         res = RunMethod().run_main(url, method, param, data_type)
+        #         print(description, res.json())
+        #         self.assertTrue(description, res.json().get("code") == expected_results[0])
 
-            if len(param) != 0:
-                for i in range(len(param)):
-                    res = RunMethod().run_main(url, method, eval(param[i]), data_type)
-                    print("-----------", res.json(), res.json().get("code"))
-                    return self.assertTrue(res.json().get("code") == expected_results[i])
+        case_name = case.split("_")
+        api_model = case_name[0]
+        api_func = case_name[1]
+        description = Config.get_description(self, api_model + "_" + api_func)
+        param = GetData.translation_params(self, api_model, api_func)
+        method = GetAPI().get_method(api_model, api_func)
+        url = GetAPI().get_host(api_model, api_func) + GetAPI().get_path(api_model, api_func)
+        data_type = GetAPI().get_data_type(api_model, api_func)
+        expected_results = Config.get_expected_results(self, api_model + "_" + api_func)
 
-            else:
-                res = RunMethod().run_main(url, method, param, data_type)
-                print("-----------", res.json(), res.json().get("code"))
-                return self.assertTrue(res.json().get("code") == expected_results[0])
+        if len(param) != 0:
 
+            for i in range(len(param)):
+                res = RunMethod().run_main(url, method, eval(param[i]), data_type)
+                print(description[i], res.json())
+                Logging.info(self, 'So should thisq1')
+                self.assertTrue(res.json().get("code") == expected_results[i])
+
+        else:
+            res = RunMethod().run_main(url, method, param, data_type)
+            print(description[0], res.json())
+            Logging.info(self, 'So should thisw2')
+            self.assertTrue(res.json().get("code") == expected_results[0])
