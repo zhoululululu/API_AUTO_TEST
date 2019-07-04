@@ -60,11 +60,9 @@ class RunCase:
             for i in range(len(param)):
                 res = RunMethod().run_main(url, method, eval(param[i]), data_type)
                 print(description[i], res.json())
-                Logging.info(self, 'So should thisq1')
                 self.assertTrue(res.json().get("code") == expected_results[i])
 
         else:
             res = RunMethod().run_main(url, method, param, data_type)
             print(description[0], res.json())
-            Logging.info(self, 'So should thisw2')
             self.assertTrue(res.json().get("code") == expected_results[0])
