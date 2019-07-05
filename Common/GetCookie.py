@@ -7,13 +7,13 @@
 
 from Common.GetAPI import GetAPI
 from Common.GetData import GetData
-import requests
+import self.session
 from Common.RunMethod import RunMethod
 
 
 class GetCookie:
     def __init__(self):
-        self.session = requests.session()
+        self.session = self.session.session()
 
     def get_cookie(self):
         param = GetData.translation_params(self, "Login", "Login")

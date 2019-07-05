@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd17e409-e5ee-4934-ad79-1b16290234cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Common/RunCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/RunCase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Case/Login_Login.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Case/Login_Login.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/GetCookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/GetCookie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/RunMethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/RunMethod.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,7 @@
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_for_test_Login_Test_Login.coverage" NAME="Unittests for test_Login.Test_Login Coverage Results" MODIFIED="1561116840194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_in_Test1_py.coverage" NAME="Unittests in Test1.py Coverage Results" MODIFIED="1560850884886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_for_Test1_Test1_test_1.coverage" NAME="Unittests for Test1.Test1.test_1 Coverage Results" MODIFIED="1560849127773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
-    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_in_AllRun_py.coverage" NAME="Unittests in AllRun.py Coverage Results" MODIFIED="1561709820823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Run" />
+    <SUITE FILE_PATH="coverage/API_AUTO_TEST$Unittests_in_AllRun_py.coverage" NAME="Unittests in AllRun.py Coverage Results" MODIFIED="1562321644700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Run" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$RunCase.coverage" NAME="RunCase Coverage Results" MODIFIED="1561627539459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1560844132266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Case" />
     <SUITE FILE_PATH="coverage/API_AUTO_TEST$RunMethod.coverage" NAME="RunMethod Coverage Results" MODIFIED="1560761924661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
@@ -92,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/RunCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
+            <state relative-caret-position="1281">
               <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
               <folding>
                 <element signature="e#94#132#0" expanded="true" />
@@ -104,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Case/Test_Login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="252">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#97#131#0" expanded="true" />
               </folding>
@@ -114,10 +115,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data/Case/Login_Login.txt">
+        <entry file="file://$PROJECT_DIR$/Common/RunMethod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            <state relative-caret-position="336">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -142,6 +143,25 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>, verify=False</find>
+      <find>, headers=heade</find>
+      <find>, headers=header</find>
+      <find>response = None</find>
+      <find>, header=None</find>
+      <find>, header</find>
+      <find>requests</find>
+      <find>=data</find>
+      <find>response</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>self.session</replace>
+      <replace>=data,**kwargs</replace>
+      <replace>self.response</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,18 +197,18 @@
         <option value="$PROJECT_DIR$/Common/test2.py" />
         <option value="$PROJECT_DIR$/Common/GetLog.py" />
         <option value="$PROJECT_DIR$/Run/AllRun.py" />
-        <option value="$PROJECT_DIR$/Common/RunMethod.py" />
         <option value="$PROJECT_DIR$/Common/Logging.py" />
         <option value="$PROJECT_DIR$/Common/RunCase.py" />
         <option value="$PROJECT_DIR$/Data/Case/Login_Login.txt" />
+        <option value="$PROJECT_DIR$/Common/RunMethod.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1808" />
-    <option name="y" value="39" />
-    <option name="width" value="1346" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -274,36 +294,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.19_06_28-17_57_53result.html">
-    <configuration name="19_06_28-16_35_59result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/API_AUTO_TEST/Report/19_06_28-16_35_59result.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.19_07_05-18_14_06result.html">
     <configuration name="19_06_28-16_37_31result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/API_AUTO_TEST/Report/19_06_28-16_37_31result.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="19_06_28-17_57_53result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/API_AUTO_TEST/Report/19_06_28-17_57_53result.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Logging" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="API_AUTO_TEST" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Common/Logging.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+    <configuration name="19_07_05-18_14_06result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/API_AUTO_TEST/Report/19_07_05-18_14_06result.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Unittests for AllRun.AllRun" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -321,13 +319,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in AllRun.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="API_AUTO_TEST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Run" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Run/AllRun.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.19_07_05-18_14_06result.html" />
+        <item itemvalue="Python tests.Unittests in AllRun.py" />
         <item itemvalue="JavaScript Debug.19_06_28-17_57_53result.html" />
         <item itemvalue="Python tests.Unittests for AllRun.AllRun" />
         <item itemvalue="JavaScript Debug.19_06_28-16_37_31result.html" />
-        <item itemvalue="Python.Logging" />
-        <item itemvalue="JavaScript Debug.19_06_28-16_35_59result.html" />
       </list>
     </recent_temporary>
   </component>
@@ -365,7 +378,8 @@
       <workItem from="1561617024369" duration="14142000" />
       <workItem from="1561685813329" duration="4822000" />
       <workItem from="1561705663409" duration="6789000" />
-      <workItem from="1562244382610" duration="39000" />
+      <workItem from="1562244382610" duration="512000" />
+      <workItem from="1562314796882" duration="1054000" />
     </task>
     <servers />
   </component>
@@ -402,13 +416,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191474000" />
+    <option name="totallyTimeSpent" value="193001000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1808" y="39" width="1346" height="1080" extended-state="0" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24261275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -629,16 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/RunMethod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="e#104#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Case/Test_Logout.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -663,6 +667,13 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="63">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Case/Login_Login.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -693,6 +704,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Common/RunCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1281">
+          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+          <folding>
+            <element signature="e#94#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Run/AllRun.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -703,30 +724,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/RunCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-          <folding>
-            <element signature="e#94#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Case/Test_Login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="252">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#97#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Case/Login_Login.txt">
+    <entry file="file://$PROJECT_DIR$/Common/RunMethod.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        <state relative-caret-position="336">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
         </state>
       </provider>
     </entry>
