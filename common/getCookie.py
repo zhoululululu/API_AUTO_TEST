@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
-# @File  : GetCookie.py
+# @File  : getCookie.py
 # @Author: 周璐
 # @Date  : 2019/6/14
 # @Desc  :
 
 
-from Common.GetAPI import GetAPI
-from Common.GetData import GetData
-import self.session
-from Common.RunMethod import RunMethod
-
+from common.getAPI import GetAPI
+from common.getData import GetData
+from common.runMethod import RunMethod
+import requests
 
 class GetCookie:
     def __init__(self):
-        self.session = self.session.session()
+        self.session = requests.session()
 
     def get_cookie(self):
         param = GetData.translation_params(self, "Login", "Login")
@@ -24,5 +23,5 @@ class GetCookie:
         header = res.headers
         return header
 
-# test = GetCookie()
-# test.get_cookie()
+# testcase = GetCookie()
+# testcase.get_cookie()

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File  : test.py
+# @File  : testcase.py
 # @Author: 周璐
 # @Date  : 2019/6/22
 # @Desc  :
@@ -7,12 +7,12 @@
 
 from HTMLTestRunner import HTMLTestRunner
 
-from Common.Config import Config
+from common.getConfig import Config
 import os
 import sys
 import time
 import unittest
-from Common.RunCase import RunCase
+from common.runCase import RunCase
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -27,7 +27,7 @@ class Test_Login(unittest.TestCase):
     #     if a % 3 == 0:
     #         return a
     #
-    # def test(self):
+    # def testcase(self):
     #     ts = [lambda x=Test_Login.res[i], y=Test_Login.res[i + 1]: [Test_Login.test_main_function(a) for a in range(x, y) if
     #                                                                 Test_Login.test_main_function(a) != None] for i, v in
     #           enumerate(Test_Login.res) if i < len(Test_Login.res) - 1]
@@ -70,7 +70,7 @@ class Test_Login(unittest.TestCase):
 def Add_case():
     test_dir = rootPath + '\Common'
     suit = unittest.TestSuite()
-    discover = unittest.defaultTestLoader.discover(test_dir, pattern='test.py', top_level_dir=None)
+    discover = unittest.defaultTestLoader.discover(test_dir, pattern='testcase.py', top_level_dir=None)
     for test_suit in discover:
         for case in test_suit:
             suit.addTest(case)
@@ -89,6 +89,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner
     runner.run(suit)
 
-# test = Test_Login()
-# test.Login()
-# test.test()
+# testcase = Test_Login()
+# testcase.Login()
+# testcase.testcase()

@@ -21,7 +21,7 @@ HTMLTestRunner is a counterpart to unittest's TextTestRunner. E.g.
     fp = file('my_report.html', 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(
                 stream=fp,
-                title='My unit test',
+                title='My unit testcase',
                 description='This demonstrates the report output by HTMLTestRunner.'
                 )
 
@@ -29,7 +29,7 @@ HTMLTestRunner is a counterpart to unittest's TextTestRunner. E.g.
     # See the Template_mixin class for more customizable options
     runner.STYLESHEET_TMPL = '<link rel="stylesheet" href="my_stylesheet.css" type="text/css">'
 
-    # run the test
+    # run the testcase
     runner.run(my_test_suite)
 
 
@@ -74,7 +74,7 @@ Change History
 Version 0.8.4 by GoverSky
 * Add sopport for 3.x
 * Add piechart for resultpiechart
-* Add Screenshot for selenium_case test
+* Add Screenshot for selenium_case testcase
 * Add Retry on failed
 
 Version 0.8.3
@@ -85,7 +85,7 @@ Version 0.8.2
 
 Version in 0.8.1
 * Validated XHTML (Wolfgang Borgert).
-* Added description of test classes and test cases.
+* Added description of testcase classes and testcase cases.
 
 Version in 0.8.0
 * Define Template_mixin class for customization.
@@ -822,9 +822,9 @@ class _TestResult(TestResult):
         self.outputBuffer = StringIO.StringIO()
 
     def startTest(self, test):
-        # test.imgs = []
+        # testcase.imgs = []
         test.imgs = getattr(test, "imgs", [])
-        # TestResult.startTest(self, test)
+        # TestResult.startTest(self, testcase)
         self.outputBuffer.seek(0)
         self.outputBuffer.truncate()
         stdout_redirector.fp = self.outputBuffer
@@ -967,7 +967,7 @@ class HTMLTestRunner(Template_mixin):
             self.description = description
 
     def run(self, test):
-        "Run the given test case or test suite."
+        "Run the given testcase case or testcase suite."
         self.startTime = datetime.datetime.now()
         result = _TestResult(self.verbosity, self.retry, self.save_last_try)
         test(result)
@@ -1213,9 +1213,9 @@ class HTMLTestRunner(Template_mixin):
 # Facilities for running tests from the command line
 ##############################################################################
 
-# Note: Reuse unittest.TestProgram to launch test. In the future we may
+# Note: Reuse unittest.TestProgram to launch testcase. In the future we may
 # build our own launcher to support more specific command line
-# parameters like test title, CSS, etc.
+# parameters like testcase title, CSS, etc.
 class TestProgram(unittest.TestProgram):
     """
     A variation of the unittest.TestProgram. Please refer to the base
@@ -1223,7 +1223,7 @@ class TestProgram(unittest.TestProgram):
     """
 
     def runTests(self):
-        # Pick HTMLTestRunner as the default test runner.
+        # Pick HTMLTestRunner as the default testcase runner.
         # base class's testRunner parameter is not useful because it means
         # we have to instantiate HTMLTestRunner before we know self.verbosity.
         if self.testRunner is None:

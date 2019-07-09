@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-# @File  : Test_Login.py
+# @File  : testLogin.py
 # @Author: 周璐
 # @Date  : 2019/6/20
 # @Desc  :
 
 
-from Common.RunCase import RunCase
+from common.runCase import RunCase
 import unittest
 
 
-class Test_Login(unittest.TestCase):
+class TestLogin(unittest.TestCase):
 
-    def test_Login(self):
+    def test_login(self):
         '''验证登录接口'''
         RunCase.run_case(self, "Login_Login")

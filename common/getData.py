@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# @File  : GetData.py
+# @File  : getData.py
 # @Author: 周璐
 # @Date  : 2019/5/31
 # @Desc  :
 
 
-from Common.GetAPI import GetAPI
-from Common.Config import Config
+from common.getAPI import GetAPI
+from common.getConfig import Config
 
 
 class GetData:

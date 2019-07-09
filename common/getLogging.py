@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File  : Logging.py
+# @File  : getLogging.py
 # @Author: 周璐
 # @Date  : 2019/6/28
 # @Desc  :

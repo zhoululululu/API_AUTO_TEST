@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-# @File  : Test_Logout.py
+# @File  : testLogout.py
 # @Author: 周璐
 # @Date  : 2019/6/20
 # @Desc  :
 
-from Common.RunCase import RunCase
+from common.runCase import RunCase
 import unittest
 
 
-class Test_Logout(unittest.TestCase):
+class TestLogout(unittest.TestCase):
 
     def test_logout(self):
         """验证登出接口"""

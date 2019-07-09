@@ -1,28 +1,28 @@
 # -*- coding: utf-8 -*-
-# @File  : RunCase.py
+# @File  : runCase.py
 # @Author: 周璐
 # @Date  : 2019/6/21
 # @Desc  :
 
 
-from Common.RunMethod import RunMethod
-from Common.GetAPI import GetAPI
-from Common.GetData import GetData
-from Common.Config import Config
+from common.runMethod import RunMethod
+from common.getAPI import GetAPI
+from common.getData import GetData
+from common.getConfig import Config
 import os
 import sys
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
-from Common.Logging import Logging
+from common.getLogging import Logging
 
 
 class RunCase:
 
-    def run_case(self, case):
+    def run_case(self, case, **kwargs):
         '''验证是否登录成功'''
-        # case_name = Config.get_case_name("\\Data\Case\\" + case+".txt")
+        # case_name = Config.get_case_name("\\data\case\\" + case+".txt")
         # print(case_name)
         # for i in range(len(case_name)):
         #     api_model = case_name[i][0]
@@ -54,15 +54,15 @@ class RunCase:
         url = GetAPI().get_host(api_model, api_func) + GetAPI().get_path(api_model, api_func)
         data_type = GetAPI().get_data_type(api_model, api_func)
         expected_results = Config.get_expected_results(self, api_model + "_" + api_func)
-
+        print (param)
         if len(param) != 0:
 
             for i in range(len(param)):
-                res = RunMethod().run_main(url, method, eval(param[i]), data_type)
+                res = RunMethod().run_main(url, method, eval(param[i]), data_type, **kwargs)
                 print(description[i], res.json())
                 self.assertTrue(res.json().get("code") == expected_results[i])
 
         else:
-            res = RunMethod().run_main(url, method, param, data_type)
+            res = RunMethod().run_main(url, method, param, data_type, **kwargs)
             print(description[0], res.json())
             self.assertTrue(res.json().get("code") == expected_results[0])
