@@ -2,7 +2,7 @@
 # @File  : getAPI.py
 # @Author: 周璐
 # @Date  : 2019/5/28
-# @Desc  :
+# @Desc  : 提取API中各个数据
 
 
 from common.getConfig import Config
@@ -57,4 +57,3 @@ class GetAPI():
         all_api_data = GetAPI.collect_data(self, model, api_func)
         selective_params = all_api_data[7]
         return selective_params
-

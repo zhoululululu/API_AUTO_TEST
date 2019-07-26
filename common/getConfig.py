@@ -2,7 +2,7 @@
 # @File  : getConfig.py
 # @Author: 周璐
 # @Date  : 2019/5/28
-# @Desc  :
+# @Desc  : 提取case及API Excel数据
 
 import os
 import xlrd

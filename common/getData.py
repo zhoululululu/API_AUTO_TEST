@@ -2,7 +2,7 @@
 # @File  : getData.py
 # @Author: 周璐
 # @Date  : 2019/5/31
-# @Desc  :
+# @Desc  : 组合API参数字段
 
 
 from common.getAPI import GetAPI

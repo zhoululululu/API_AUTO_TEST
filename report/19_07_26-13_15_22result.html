@@ -420,9 +420,9 @@ function hide_img(obj){
 </script>
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2019-07-09 17:06:20</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:00.738042</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>:2 <span class="tj errorCase">Error</span>:1 <span class="tj">通过率</span>:66.7%</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-07-26 13:15:22</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:12.907738</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>:4 <span class="tj">通过率</span>:100.0%</p>
 
 <p class='description'>测试执行情况</p>
 </div>
@@ -435,12 +435,12 @@ function hide_img(obj){
 </div>
 
 <div id='show_detail_line' style=" float: left;  width: 100%;">
-<a class="abstract detail_button" href='javascript:showCase(0,1)'>概要[66.67%]</a>
-<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[2]</a>
+<a class="abstract detail_button" href='javascript:showCase(0,1)'>概要[100.00%]</a>
+<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[4]</a>
 <a class="failed  detail_button" href='javascript:showCase(2,1)'>失败[0]</a>
-<a class="errored  detail_button" href='javascript:showCase(3,1)'>错误[1]</a>
+<a class="errored  detail_button" href='javascript:showCase(3,1)'>错误[0]</a>
 <a class="skiped  detail_button"  href='javascript:showCase(4,1)'>跳过[0]</a>
-<a class="all detail_button" href='javascript:showCase(5,1)'>所有[3]</a>
+<a class="all detail_button" href='javascript:showCase(5,1)'>所有[4]</a>
 </div>
 
 <table id='result_table'>
@@ -463,47 +463,33 @@ function hide_img(obj){
     <th>错误截图</th>
 </tr>
 
-<tr class='errorClass'>
-    <td>TestDepartmentList.TestDepartmentList</td>
+<tr class='passClass'>
+    <td>testDevice.TestDevice</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
     <td><a href="javascript:showClassDetail('c1.1',1)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='et1.1.1' class='none'>
-    <td ><div class='testcase'>test_department_list</div></td>
+<tr id='pt1.1.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_device_list</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status errorCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.1.1')" >
-        错误</a></span>
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1.1')" >
+        通过</a></span>
 
-    <div id='div_et1.1.1' class="popup_window">
+    <div id='div_pt1.1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-et1.1.1: {'Set-Cookie': 'rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 08-Jul-2019 09:06:22 GMT', 'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHQiOjE1NjI2NjkxODIxNzksInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdGUiOiJWQUxJRCIsInVzZXJJZCI6Inpob3VsdSJ9.6EeB3L0IKOIH6nbvBsQlWA2xcXAbqbIQvtjEud83kPc', 'Access-Control-Expose-Headers': 'Authorization', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Date': 'Tue, 09 Jul 2019 09:06:21 GMT'}
-Traceback (most recent call last):
-  File "D:\workspace\API_AUTO_TEST\Case\TestDepartmentList.py", line 16, in test_department_list
-    RunCase.run_case(self, "PlatformConfigDepartment_DepartmentList",header=GetCookie.get_cookie(self))
-  File "D:\workspace\API_AUTO_TEST\Common\RunCase.py", line 61, in run_case
-    res = RunMethod().run_main(url, method, eval(param[i]), data_type, **kwargs)
-  File "D:\workspace\API_AUTO_TEST\Common\RunMethod.py", line 84, in run_main
-    self.response = self.post_main(url, data, data_type, **kwargs)
-  File "D:\workspace\API_AUTO_TEST\Common\RunMethod.py", line 20, in post_main
-    self.response = requests.post(url=url, json=data, **kwargs)
-  File "D:\Python3.7\lib\site-packages\requests\api.py", line 116, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "D:\Python3.7\lib\site-packages\requests\api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-TypeError: request() got an unexpected keyword argument 'header'
+pt1.1.1: 正常查询
 
 
         </pre>
@@ -515,7 +501,7 @@ TypeError: request() got an unexpected keyword argument 'header'
 </tr>
 
 <tr class='passClass'>
-    <td>TestLogin.TestLogin</td>
+    <td>testFirmwareVersion.TestFirmwareVersion</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -525,7 +511,7 @@ TypeError: request() got an unexpected keyword argument 'header'
 </tr>
 
 <tr id='pt1.2.1' class='hiddenRow'>
-    <td ><div class='testcase'>test_login</div></td>
+    <td ><div class='testcase'>test_firmwareVersion_list</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -540,8 +526,7 @@ TypeError: request() got an unexpected keyword argument 'header'
         </div>
         <pre>
         
-pt1.2.1: 普通用户登录 {'code': '200', 'msg': '操作成功', 'data': {'loginName': 'zhoulu', 'nickName': '周璐', 'departmentName': 'A1部-ICO', 'lastLoginTime': '2019-07-09T17:06:22.000+0800'}}
-账号不存在 {'code': '02004', 'msg': '登录名或密码错误', 'data': None}
+pt1.2.1: 正常查询
 
 
         </pre>
@@ -553,17 +538,17 @@ pt1.2.1: 普通用户登录 {'code': '200', 'msg': '操作成功', 'data': {'log
 </tr>
 
 <tr class='passClass'>
-    <td>TestLogout.TestLogout</td>
-    <td>1</td>
-    <td>1</td>
+    <td>testLoginOut.TestLoginOut</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.3',1)">详情</a></td>
+    <td><a href="javascript:showClassDetail('c1.3',2)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
 <tr id='pt1.3.1' class='hiddenRow'>
-    <td ><div class='testcase'>test_logout</div></td>
+    <td ><div class='testcase'>test_login</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -578,7 +563,35 @@ pt1.2.1: 普通用户登录 {'code': '200', 'msg': '操作成功', 'data': {'log
         </div>
         <pre>
         
-pt1.3.1: 正常登出 {'code': '02012', 'msg': '登出', 'data': None}
+pt1.3.1: 普通用户登录
+账号不存在
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1.3.2' class='hiddenRow'>
+    <td ><div class='testcase'>test_logout</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3.2')" >
+        通过</a></span>
+
+    <div id='div_pt1.3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3.2: 正常登出
 
 
         </pre>
@@ -591,17 +604,17 @@ pt1.3.1: 正常登出 {'code': '02012', 'msg': '登出', 'data': None}
 
 <tr id='total_row'>
     <th>统计</th>
-    <th>3</th>
-    <th>2</th>
+    <th>4</th>
+    <th>4</th>
     <th>0</th>
-    <th>1</th>
+    <th>0</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
 </tr>
 </table>
 <script>
     showCase(0,1);
-    drawCircle('circle1',2, 0, 1);
+    drawCircle('circle1',4, 0, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

@@ -31,7 +31,7 @@ class AllRun(unittest.TestCase):
 test = AllRun()
 alllcase = test.add_case()
 now = time.strftime('%y_%m_%d-%H_%M_%S')
-filename = rootPath + '\report' + '\\' + now + 'result.html'
+filename = rootPath + '\\report' + '\\' + now + 'result.html'
 fp = open(filename, 'wb')
 runner = HTMLTestRunner(stream=fp, title='测试报告', description='测试执行情况')
 runner.run(alllcase)

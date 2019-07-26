@@ -8,75 +8,92 @@ import requests
 
 
 class RunMethod:
+
+    @staticmethod
+    def token():
+        response = requests.post("http://117.50.57.155:48230/user/login",
+                                 json={'loginname': 'zhoulu', 'password': '123456'}).headers
+        return response["Authorization"]
+
+    @staticmethod
+    def header():
+        hd = {"Content-Type": "application/json",
+              "Authorization": RunMethod.token(),
+              'Connection': 'close'
+              }
+        return hd
+
     def __init__(self):
         self.response = None
+        self.session = requests.session()
+        self.session.headers = RunMethod.header()
 
     def post_main(self, url, data=None, data_type=None, **kwargs):
         if data_type == "params":
-            self.response = requests.post(url=url, params=data, **kwargs)
+            self.response = self.session.post(url=url, params=data, **kwargs)
         elif data_type == "data":
-            self.response = requests.post(url=url, data=data, **kwargs)
+            self.response = self.session.post(url=url, data=data, **kwargs)
         elif data_type == "json":
-            self.response = requests.post(url=url, json=data, **kwargs)
+            self.response = self.session.post(url=url, json=data, **kwargs)
         elif data_type == "file":
-            self.response = requests.post(url=url, file=data, **kwargs)
+            self.response = self.session.post(url=url, file=data, **kwargs)
         elif data_type == "-":
-            self.response = requests.post(url=url)
+            self.response = self.session.post(url=url)
         return self.response
 
     def get_main(self, url, data=None, data_type=None, **kwargs):
         if data_type == "params":
-            self.response = requests.get(url=url, params=data, **kwargs)
+            self.response = self.session.get(url=url, params=data, **kwargs)
         elif data_type == "data":
-            self.response = requests.get(url=url, data=data, **kwargs)
+            self.response = self.session.get(url=url, data=data, **kwargs)
         elif data_type == "json":
-            self.response = requests.get(url=url, json=data, **kwargs)
+            self.response = self.session.get(url=url, json=data, **kwargs)
         elif data_type == "-":
-            self.response = requests.get(url=url)
+            self.response = self.session.get(url=url)
         return self.response
 
     def put_main(self, url, data=None, data_type=None, **kwargs):
         if data_type == "params":
-            self.response = requests.put(url=url, params=data, **kwargs)
+            self.response = self.session.put(url=url, params=data, **kwargs)
         elif data_type == "data":
-            self.response = requests.put(url=url, data=data, **kwargs)
+            self.response = self.session.put(url=url, data=data, **kwargs)
         elif data_type == "json":
-            self.response = requests.put(url=url, json=data, **kwargs)
+            self.response = self.session.put(url=url, json=data, **kwargs)
         elif data_type == "-":
-            self.response = requests.put(url=url)
+            self.response = self.session.put(url=url)
         return self.response
 
     def delete_main(self, url, data=None, data_type=None, **kwargs):
         if data_type == "params":
-            self.response = requests.delete(url=url, params=data, **kwargs)
+            self.response = self.session.delete(url=url, params=data, **kwargs)
         elif data_type == "data":
-            self.response = requests.delete(url=url, data=data, **kwargs)
+            self.response = self.session.delete(url=url, data=data, **kwargs)
         elif data_type == "json":
-            self.response = requests.delete(url=url, json=data, **kwargs)
+            self.response = self.session.delete(url=url, json=data, **kwargs)
         elif data_type == "-":
-            self.response = requests.delete(url=url)
+            self.response = self.session.delete(url=url)
         return self.response
 
     def patch_main(self, url, data=None, data_type=None, **kwargs):
         if data_type == "params":
-            self.response = requests.patch(url=url, params=data, **kwargs)
+            self.response = self.session.patch(url=url, params=data, **kwargs)
         elif data_type == "data":
-            self.response = requests.patch(url=url, data=data, **kwargs)
+            self.response = self.session.patch(url=url, data=data, **kwargs)
         elif data_type == "json":
-            self.response = requests.patch(url=url, json=data, **kwargs)
+            self.response = self.session.patch(url=url, json=data, **kwargs)
         elif data_type == "-":
-            self.response = requests.patch(url=url)
+            self.response = self.session.patch(url=url)
         return self.response
 
     def head_main(self, url, data=None, data_type=None, **kwargs):
         if data_type == "params":
-            self.response = requests.head(url=url, params=data, **kwargs)
+            self.response = self.session.head(url=url, params=data, **kwargs)
         elif data_type == "data":
-            self.response = requests.head(url=url, data=data, **kwargs)
+            self.response = self.session.head(url=url, data=data, **kwargs)
         elif data_type == "json":
-            self.response = requests.head(url=url, json=data, **kwargs)
+            self.response = self.session.head(url=url, json=data, **kwargs)
         elif data_type == "-":
-            self.response = requests.head(url=url)
+            self.response = self.session.head(url=url)
         return self.response
 
     def run_main(self, url, method, data=None, data_type=None, **kwargs):
