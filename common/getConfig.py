@@ -6,6 +6,8 @@
 
 import os
 import xlrd
+import configparser
+from common.getLogging import Logging
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -68,3 +70,44 @@ class Config:
             for name in files:
                 case_name.append((os.path.splitext(name))[0].split("_"))  # 分离文件名及后缀 去除model及func
         return case_name
+
+
+class IniConfig:
+    def __init__(self):
+        self.logging = Logging()
+        self.config = configparser.ConfigParser()
+        self.config.read(rootPath + "\\data\\config.txt", encoding='UTF-8')
+        self.conf = {}
+
+    def get_conf(self):
+        # Headers
+        self.conf['Authorization'] = self.config.get("Headers", "Authorization")
+        self.conf['Content-Type'] = self.config.get("Headers", "Content-Type")
+
+        #Email
+        self.conf['login_email'] = self.config.get("email", "login_email")
+        self.conf['login_password'] = self.config.get("email", "login_password")
+        self.conf['port'] = self.config.get("email", "port")
+        self.conf['smtp'] = self.config.get("email", "smtp")
+        self.conf['Recipient'] = self.config.get("email", "Recipient")
+        self.conf['subject'] = self.config.get("email", "subject")
+        self.conf['mailbody'] = self.config.get("email", "mailbody")
+
+        #SQL
+        return self.conf
+
+    #写authorization
+    def set_authorization(self, authorization):
+        index = 0
+        with open(rootPath + "\\data\\config.txt", "r", encoding="utf-8") as f_read:
+            content = f_read.readlines()
+            print(content)
+        with open(rootPath + "\\data\\config.txt", "w", encoding="utf-8") as f_write:
+            for i in range(len(content)):
+                str = ''
+                if i == 1:
+                    str = "Authorization " "=" + authorization + "\n"
+                else:
+                    str = content[i]
+                index += 1
+                f_write.write(str)

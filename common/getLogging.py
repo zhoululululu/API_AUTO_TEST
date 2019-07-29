@@ -36,11 +36,12 @@ class Logging():
         fh.setFormatter(self.formatter)
         self.logger.addHandler(fh)
 
-        # 创建一个StreamHandler,用于输出到控制台
-        ch = logging.StreamHandler()
-        ch.setLevel(logging.DEBUG)
-        ch.setFormatter(self.formatter)
-        self.logger.addHandler(ch)
+
+        # # 创建一个StreamHandler,用于输出到控制台
+        # ch = logging.StreamHandler()
+        # ch.setLevel(logging.DEBUG)
+        # ch.setFormatter(self.formatter)
+        # self.logger.addHandler(ch)
 
         # 区分日志级别
         if level == 'info':
@@ -53,7 +54,7 @@ class Logging():
             self.logger.error(message)
 
         # 避免日志输出重复问题
-        self.logger.removeHandler(ch)
+        # self.logger.removeHandler(ch)
         self.logger.removeHandler(fh)
 
         # 关闭打开的文件

@@ -11,6 +11,7 @@ from common.getData import GetData
 from common.getConfig import Config
 import os
 import sys
+from common.getLogging import Logging
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -20,6 +21,8 @@ sys.path.append(rootPath)
 class RunCase:
 
     def run_case(self, case, **kwargs):
+
+        self.logging = Logging()
         case_name = case.split("_")
         api_model = case_name[0]
         api_func = case_name[1]
@@ -32,10 +35,17 @@ class RunCase:
         if len(param) != 0:
             for i in range(len(param)):
                 res = RunMethod().run_main(url, method, eval(param[i]), data_type, **kwargs)
+                self.logging.info("API INFO :" + "URL :" + url)
+                self.logging.info("API INFO :" + "Method :" + method + "    Data Type :" + data_type)
+                self.logging.info("API INFO :" + "Param :" + str(param[i]))
+                self.logging.info("API Result:" + str(res.json()))
                 print(description[i], res.json()["code"], res.json()["msg"])
                 self.assertTrue(res.json().get("code") == expected_results[i])
-
         else:
             res = RunMethod().run_main(url, method, param, data_type, **kwargs)
             print(description[0], res.json()["code"], res.json()["msg"])
+            self.logging.info("API INFO :" + "URL :" + url)
+            self.logging.info("API INFO :" + "Method :" + method + "    Data Type :" + data_type)
+            self.logging.info("API INFO :" + "Param :" + str(param))
+            self.logging.info("API Result:" + str(res.json()))
             self.assertTrue(res.json().get("code") == expected_results[0])

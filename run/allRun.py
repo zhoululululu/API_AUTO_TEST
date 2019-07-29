@@ -10,13 +10,18 @@ import sys
 import time
 import unittest
 from run.HTMLTestRunner_cn import HTMLTestRunner
-
+from common.runMethod import RunMethod
+from common import  sendEmail
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 
 
 class AllRun(unittest.TestCase):
+
+    def do_gettoken(self):
+        take_auth = RunMethod()
+        take_auth.take_authorization()
 
     def add_case(self):
         test_dir = rootPath + '\\testcase'
@@ -29,6 +34,7 @@ class AllRun(unittest.TestCase):
 
 
 test = AllRun()
+test.do_gettoken()
 alllcase = test.add_case()
 now = time.strftime('%y_%m_%d-%H_%M_%S')
 filename = rootPath + '\\report' + '\\' + now + 'result.html'
@@ -38,3 +44,4 @@ runner.run(alllcase)
 
 run = AllRun()
 run.add_case()
+sendEmail.send_email(filename)

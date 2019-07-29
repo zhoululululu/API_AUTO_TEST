@@ -1,0 +1,12 @@
+[Headers]
+Authorization =eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHQiOjE1NjQyNTIyODc3MTQsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdGUiOiJWQUxJRCIsInVzZXJJZCI6Inpob3VsdSJ9.zdFfTdS8Z_JCnyvfgz2pkSdz4HHpJDST2TdJd9OJMo4
+Content-Type = application/json;charset=UTF-8
+
+[email]
+port = 465
+login_email = 609200751@qq.com
+login_password = mgvdekrrtlgjbehj
+smtp = smtp.qq.com
+subject = AUTO-API Test Result
+mailbody = 接口自动化测试报告
+Recipient = zhoulu@gongguizhijia.com

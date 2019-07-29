@@ -5,28 +5,32 @@
 # @Desc  : 封装发送接口函数
 
 import requests
+from common.getConfig import IniConfig
+from common.getLogging import Logging
 
 
 class RunMethod:
 
-    @staticmethod
-    def token():
-        response = requests.post("http://117.50.57.155:48230/user/login",
-                                 json={'loginname': 'zhoulu', 'password': '123456'}).headers
-        return response["Authorization"]
-
-    @staticmethod
-    def header():
-        hd = {"Content-Type": "application/json",
-              "Authorization": RunMethod.token(),
-              'Connection': 'close'
-              }
-        return hd
-
     def __init__(self):
+
+        self.logging = Logging()
         self.response = None
         self.session = requests.session()
-        self.session.headers = RunMethod.header()
+        self.config = IniConfig()
+        self.c = self.config.get_conf()
+        self.session.headers = RunMethod.header(self)
+
+    def take_authorization(self):
+        authorization = requests.post("http://117.50.57.155:48230/user/login",
+                                      json={'loginname': 'zhoulu', 'password': '123456'}).headers["Authorization"]
+        IniConfig().set_authorization(authorization)
+        self.logging.info("已登录获取Authorization")
+        self.logging.info("Authorization ：" + authorization)
+
+    def header(self):
+        hd = {"Content-Type": self.c["Content-Type"],
+              "Authorization": self.c["Authorization"]}
+        return hd
 
     def post_main(self, url, data=None, data_type=None, **kwargs):
         if data_type == "params":
