@@ -11,7 +11,7 @@ import time
 import unittest
 from run.HTMLTestRunner_cn import HTMLTestRunner
 from common.runMethod import RunMethod
-from common import  sendEmail
+from common.sendEmail import SendEmail
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
@@ -44,4 +44,5 @@ runner.run(alllcase)
 
 run = AllRun()
 run.add_case()
-sendEmail.send_email(filename)
+send_email =SendEmail()
+send_email.send_email(filename)

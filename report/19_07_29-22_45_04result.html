@@ -420,9 +420,9 @@ function hide_img(obj){
 </script>
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2019-07-28 00:45:57</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:03.098629</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>:4 <span class="tj">通过率</span>:100.0%</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-07-29 22:45:04</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:03.741310</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>:3 <span class="tj failCase">Failure</span>:1 <span class="tj">通过率</span>:75.0%</p>
 
 <p class='description'>测试执行情况</p>
 </div>
@@ -435,9 +435,9 @@ function hide_img(obj){
 </div>
 
 <div id='show_detail_line' style=" float: left;  width: 100%;">
-<a class="abstract detail_button" href='javascript:showCase(0,1)'>概要[100.00%]</a>
-<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[4]</a>
-<a class="failed  detail_button" href='javascript:showCase(2,1)'>失败[0]</a>
+<a class="abstract detail_button" href='javascript:showCase(0,1)'>概要[75.00%]</a>
+<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[3]</a>
+<a class="failed  detail_button" href='javascript:showCase(2,1)'>失败[1]</a>
 <a class="errored  detail_button" href='javascript:showCase(3,1)'>错误[0]</a>
 <a class="skiped  detail_button"  href='javascript:showCase(4,1)'>跳过[0]</a>
 <a class="all detail_button" href='javascript:showCase(5,1)'>所有[4]</a>
@@ -537,11 +537,11 @@ pt1.2.1: 正常查询 200 操作成功
     <td>无截图</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>testLoginOut.TestLoginOut</td>
     <td>2</td>
-    <td>2</td>
-    <td>0</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.3',2)">详情</a></td>
     <td>&nbsp;</td>
@@ -575,23 +575,29 @@ pt1.3.1: 普通用户登录 200 操作成功
     <td>无截图</td>
 </tr>
 
-<tr id='pt1.3.2' class='hiddenRow'>
+<tr id='ft1.3.2' class='none'>
     <td ><div class='testcase'>test_logout</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status passCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3.2')" >
-        通过</a></span>
+    <span class='status failCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3.2')" >
+        失败</a></span>
 
-    <div id='div_pt1.3.2' class="popup_window">
+    <div id='div_ft1.3.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.3.2: 正常登出 02012 登出
+ft1.3.2: 正常登出 0001 未知错误,请联系管理员
+Traceback (most recent call last):
+  File "D:\PyCharm\wordspace\API_AUTO_TEST\testcase\testLoginOut.py", line 20, in test_logout
+    RunCase.run_case(self, "Logout_Logout")
+  File "D:\PyCharm\wordspace\API_AUTO_TEST\common\runCase.py", line 51, in run_case
+    self.assertTrue(res.json().get("code") == expected_results[0])
+AssertionError: False is not true
 
 
         </pre>
@@ -605,8 +611,8 @@ pt1.3.2: 正常登出 02012 登出
 <tr id='total_row'>
     <th>统计</th>
     <th>4</th>
-    <th>4</th>
-    <th>0</th>
+    <th>3</th>
+    <th>1</th>
     <th>0</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
@@ -614,7 +620,7 @@ pt1.3.2: 正常登出 02012 登出
 </table>
 <script>
     showCase(0,1);
-    drawCircle('circle1',4, 0, 0);
+    drawCircle('circle1',3, 1, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

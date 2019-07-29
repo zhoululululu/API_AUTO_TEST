@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd17e409-e5ee-4934-ad79-1b16290234cd" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Data/config.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Logs/2019_07_27.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Logs/2019_07_28.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/sendEmail.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/report/19_07_28-00_49_12result.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/report/19_07_28-00_51_21result.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/API_AUTO_TEST.iml" afterPath="$PROJECT_DIR$/.idea/API_AUTO_TEST.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Logs/2019_07_29.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/report/19_07_29-22_44_16result.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Logs/2019_06_28.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/common/getConfig.py" afterPath="$PROJECT_DIR$/common/getConfig.py" />
-      <change beforePath="$PROJECT_DIR$/common/getLog.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/common/getLogging.py" afterPath="$PROJECT_DIR$/common/getLogging.py" />
-      <change beforePath="$PROJECT_DIR$/common/runCase.py" afterPath="$PROJECT_DIR$/common/runCase.py" />
-      <change beforePath="$PROJECT_DIR$/common/runMethod.py" afterPath="$PROJECT_DIR$/common/runMethod.py" />
-      <change beforePath="$PROJECT_DIR$/report/19_07_26-13_13_49result.html" afterPath="$PROJECT_DIR$/report/19_07_28-00_45_57result.html" />
-      <change beforePath="$PROJECT_DIR$/report/19_07_26-13_15_22result.html" afterPath="$PROJECT_DIR$/report/19_07_28-00_43_00result.html" />
-      <change beforePath="$PROJECT_DIR$/report/19_07_26-13_16_29result.html" afterPath="$PROJECT_DIR$/report/19_07_28-00_40_14result.html" />
+      <change beforePath="$PROJECT_DIR$/Data/config.txt" afterPath="$PROJECT_DIR$/Data/config.txt" />
+      <change beforePath="$PROJECT_DIR$/common/sendEmail.py" afterPath="$PROJECT_DIR$/common/sendEmail.py" />
+      <change beforePath="$PROJECT_DIR$/report/19_07_28-00_40_14result.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/report/19_07_28-00_43_00result.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/report/19_07_28-00_45_57result.html" afterPath="$PROJECT_DIR$/report/19_07_29-22_45_04result.html" />
+      <change beforePath="$PROJECT_DIR$/report/19_07_28-00_49_12result.html" afterPath="$PROJECT_DIR$/report/19_07_29-22_45_19result.html" />
+      <change beforePath="$PROJECT_DIR$/report/19_07_28-00_51_21result.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/run/allRun.py" afterPath="$PROJECT_DIR$/run/allRun.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,11 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getConfig.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getConfig.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/getConfig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1019">
-              <caret line="95" column="12" lean-forward="false" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+            <state relative-caret-position="130">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="e#114#123#0" expanded="true" />
               </folding>
@@ -99,8 +91,8 @@
       <file leaf-file-name="config.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/config.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="81">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,9 +101,11 @@
       <file leaf-file-name="sendEmail.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/sendEmail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="130">
+              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="e#67#81#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,11 +134,32 @@
       <file leaf-file-name="runMethod.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/runMethod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1743">
+            <state relative-caret-position="159">
               <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="e#104#119#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allRun.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run/allRun.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+              <folding>
+                <element signature="e#93#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_07_29.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Logs/2019_07_29.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-276">
+              <caret line="63" column="109" lean-forward="true" selection-start-line="63" selection-start-column="109" selection-end-line="63" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -234,9 +249,9 @@
         <option value="$PROJECT_DIR$/Data/config.ini" />
         <option value="$PROJECT_DIR$/common/runMethod.py" />
         <option value="$PROJECT_DIR$/common/getConfig.py" />
+        <option value="$PROJECT_DIR$/Data/config.txt" />
         <option value="$PROJECT_DIR$/run/allRun.py" />
         <option value="$PROJECT_DIR$/common/sendEmail.py" />
-        <option value="$PROJECT_DIR$/Data/config.txt" />
       </list>
     </option>
   </component>
@@ -341,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for allRun.AllRun">
+  <component name="RunManager" selected="Python tests.Unittests in allRun.py">
     <configuration name="getConfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -429,9 +444,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for allRun.AllRun" />
-        <item index="1" class="java.lang.String" itemvalue="Python.runMethod" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in allRun.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in allRun.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for allRun.AllRun" />
+        <item index="2" class="java.lang.String" itemvalue="Python.runMethod" />
         <item index="3" class="java.lang.String" itemvalue="Python.getConfig" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for testLoginOut.TestLoginOut.test_login" />
       </list>
@@ -484,12 +499,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_allRun_AllRun - 2019.07.28 at 00h 45m 13s.xml">
-      <configuration name="Unittests for allRun.AllRun" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_allRun_AllRun - 2019.07.28 at 00h 46m 00s.xml">
-      <configuration name="Unittests for allRun.AllRun" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_allRun_AllRun - 2019.07.28 at 00h 47m 27s.xml">
       <configuration name="Unittests for allRun.AllRun" configurationId="tests" />
     </history-entry>
@@ -502,16 +511,22 @@
     <history-entry file="Unittests_for_allRun_AllRun - 2019.07.28 at 00h 51m 25s.xml">
       <configuration name="Unittests for allRun.AllRun" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_allRun_py - 2019.07.28 at 00h 35m 50s.xml">
+    <history-entry file="Unittests_for_allRun_AllRun - 2019.07.29 at 22h 40m 35s.xml">
+      <configuration name="Unittests for allRun.AllRun" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_allRun_py - 2019.07.29 at 22h 39m 04s.xml">
       <configuration name="Unittests in allRun.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_allRun_py - 2019.07.28 at 00h 38m 30s.xml">
+    <history-entry file="Unittests_in_allRun_py - 2019.07.29 at 22h 42m 57s.xml">
       <configuration name="Unittests in allRun.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_allRun_py - 2019.07.28 at 00h 40m 20s.xml">
+    <history-entry file="Unittests_in_allRun_py - 2019.07.29 at 22h 44m 59s.xml">
       <configuration name="Unittests in allRun.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_allRun_py - 2019.07.28 at 00h 43m 03s.xml">
+    <history-entry file="Unittests_in_allRun_py - 2019.07.29 at 22h 45m 08s.xml">
+      <configuration name="Unittests in allRun.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_allRun_py - 2019.07.29 at 22h 45m 28s.xml">
       <configuration name="Unittests in allRun.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -534,7 +549,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19106145" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5071823" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -613,7 +628,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Report/19_06_21-18_35_19result.html" />
     <entry file="file://$PROJECT_DIR$/Report/19_06_21-18_35_47result.html" />
     <entry file="file://$PROJECT_DIR$/Report/19_06_27-14_42_59result.html" />
     <entry file="file://$PROJECT_DIR$/Report/19_06_27-17_27_06result.html" />
@@ -864,12 +878,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run/allRun.py">
+    <entry file="file://$PROJECT_DIR$/common/runMethod.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="159">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
-            <element signature="e#93#102#0" expanded="true" />
+            <element signature="e#104#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -886,37 +900,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/config.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/sendEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/runMethod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1743">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#104#119#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/getConfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1019">
-          <caret line="95" column="12" lean-forward="false" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+        <state relative-caret-position="130">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="e#114#123#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/sendEmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#67#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/allRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding>
+            <element signature="e#93#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/2019_07_29.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-276">
+          <caret line="63" column="109" lean-forward="true" selection-start-line="63" selection-start-column="109" selection-end-line="63" selection-end-column="109" />
         </state>
       </provider>
     </entry>
